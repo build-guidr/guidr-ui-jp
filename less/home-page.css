@@ -57,6 +57,8 @@
 .info-panel img {
   width: 50%;
   height: 50%;
+  margin: 10px;
+  border: 10px;
 }
 .text-content {
   padding: 20px;
