@@ -130,17 +130,17 @@ table {
   background: #1D92B8;
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: sticky;
-  top: 0px;
+  top: 0;
+  width: 100%;
   background-color: #1D92B8;
 }
-nav {
+.nav-container nav {
   padding: 20px;
   font-size: 15px;
-  align-items: center;
+  text-align: center;
 }
-nav a {
+.nav-container nav a {
   padding: 20px;
   text-decoration: none;
 }
@@ -193,4 +193,27 @@ nav a {
 .btn-2:hover {
   background-color: black;
   color: lightgrey;
+}
+.info-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: lightblue;
+}
+.info-panel img {
+  width: 50%;
+  height: 50%;
+}
+.text-content {
+  padding: 20px;
+  width: 50%;
+}
+.text-content h2 {
+  padding: 10px;
+}
+footer {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  background-color: #A2CD60;
 }
