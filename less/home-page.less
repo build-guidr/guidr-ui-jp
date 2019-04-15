@@ -10,7 +10,7 @@
     margin-bottom: 20px;
 }
 
-.hero-picture img {
+img {
     width: 100%;
     height: auto;
 }
@@ -21,14 +21,30 @@
     align-content: center;
 }
 
+.pic-container {
+    position: relative;
+    width: 100%;
 
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
 
 .btn-1 {
     .custom-btn();
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .btn-2 {
     .custom-btn();
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .custom-btn(@width: 200px, @bgColor: lightgrey, @fontColor: black) {
@@ -42,6 +58,11 @@
     background-color: @bgColor;
     width: @width;
     color: @fontColor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 
     &:hover {
         background-color: @fontColor;
@@ -54,7 +75,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    background-color: lightblue;
+    background-color:  #68ccea;
 
     img {
         width: 50%;
@@ -72,7 +93,7 @@
     transition: 0.3s;
     width: 40%;
     border-radius: 10px;
-    background-color: #68ccea;
+    background-color: lightblue;
      
       
       .card:hover {

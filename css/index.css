@@ -133,7 +133,7 @@ table {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #1D92B8;
+  background-color: #68CCEA;
 }
 .nav-container nav {
   padding: 20px;
@@ -153,7 +153,7 @@ table {
   display: flex;
   margin-bottom: 20px;
 }
-.hero-picture img {
+img {
   width: 100%;
   height: auto;
 }
@@ -161,6 +161,14 @@ table {
   font-size: 30px;
   display: block;
   align-content: center;
+}
+.pic-container {
+  position: relative;
+  width: 100%;
+}
+.pic-container img {
+  width: 100%;
+  height: auto;
 }
 .btn-1 {
   display: block;
@@ -173,6 +181,11 @@ table {
   background-color: lightgrey;
   width: 200px;
   color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 .btn-1:hover {
   background-color: black;
@@ -189,6 +202,12 @@ table {
   background-color: lightgrey;
   width: 200px;
   color: black;
+  position: absolute;
+  top: 50%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 .btn-2:hover {
   background-color: black;
@@ -199,7 +218,7 @@ table {
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
-  background-color: lightblue;
+  background-color: #68ccea;
 }
 .info-panels img {
   width: 50%;
@@ -215,7 +234,7 @@ table {
   transition: 0.3s;
   width: 40%;
   border-radius: 10px;
-  background-color: #68ccea;
+  background-color: lightblue;
 }
 .card .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
