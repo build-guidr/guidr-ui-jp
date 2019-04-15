@@ -1,12 +1,15 @@
+@mobile: ~"(max-width: 500px)";
+@tablet: ~"(max-width: 800px)";
+
 .nav-container {
-    background: #1D92B8;
+    background-color: #68CCEA;
     display: flex;
-    flex-direction: column; 
-    position: sticky;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
     top: 0;
     width: 100%;
-    background-color: #68CCEA;
-
+    
     nav {
         padding: 20px;
         font-size: 15px;
@@ -16,6 +19,11 @@
         a {
             padding: 20px;
             text-decoration: none;
+        }
+
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
         }
     }    
 }
