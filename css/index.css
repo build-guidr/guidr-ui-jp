@@ -136,9 +136,14 @@ table {
   top: 0;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .nav-container {
+    position: relative;
+  }
+}
 .nav-container nav {
   font-size: 15px;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
   text-align: right;
   margin-right: 50px;
 }
@@ -147,6 +152,11 @@ table {
   color: white;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  .nav-container nav a {
+    border-bottom: solid black 1px;
+  }
+}
 .nav-container nav a:hover {
   background-color: #555;
 }
@@ -154,6 +164,7 @@ table {
   .nav-container nav {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 }
 footer {
@@ -280,9 +291,16 @@ img {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
+  .info-panels img {
+    width: 80%;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
   .info-panels {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 .card {
@@ -297,9 +315,6 @@ img {
   background-color: lightblue;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.card .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
 .card h2 {
   padding: 10px;
   font-size: 30px;
@@ -308,6 +323,12 @@ img {
 .card p {
   font-size: 20px;
   margin-top: 40px;
+}
+@media (max-width: 500px) {
+  .card {
+    width: 80%;
+    height: auto;
+  }
 }
 .quote-spacer {
   display: block;
