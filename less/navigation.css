@@ -1,5 +1,4 @@
 .nav-container {
-  background-color: #68CCEA;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -8,13 +7,16 @@
   width: 100%;
 }
 .nav-container nav {
+  background-color: #2F454E;
   padding: 20px;
   font-size: 15px;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   text-align: center;
+  border: ridge #808080 5px;
 }
 .nav-container nav a {
   padding: 20px;
+  color: white;
   text-decoration: none;
 }
 @media (max-width: 500px) {
