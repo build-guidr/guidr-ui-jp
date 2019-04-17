@@ -1,2 +1,34 @@
 @mobile: ~"(max-width: 500px)";
 @tablet: ~"(max-width: 500px)";
+
+.btn-3 {
+    .custom-btn();
+}
+
+.btn-1 {
+
+    .custom-btn();
+}
+
+.btn-2 {
+    .custom-btn();
+
+}
+
+.custom-btn(@width: 200px, @bgColor: rgba(165, 184, 190, 0.555), @fontColor: black) {
+    cursor: pointer;
+    margin: 10px;
+    height: 45px;
+    font-size: 20px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: @bgColor;
+    width: @width;
+    color: @fontColor;
+
+
+    &:hover {
+        background-color: @fontColor;
+        color: #ffff;
+    }
+}

@@ -2,44 +2,44 @@
 @tablet: ~"(max-width: 800px)";
 
 .nav-container {
-  background-color: rgba(29, 145, 184, 0.979);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  width: 100%;
-
-  @media @mobile {
-    position: relative;
-  }
-
-  nav {
-    font-size: 15px;
-    font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-      sans-serif;
-    text-align: right;
-    margin-right: 50px;
-
-    a {
-      padding: 20px;
-      color: white;
-      text-decoration: none;
-
-      @media @mobile {
-        border-bottom: solid black 1px;
-      }
-    }
-
-    a:hover {
-      background-color: #555;
-    }
+    background-color: rgba(29, 145, 184, 0.8);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
 
     @media @mobile {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
+        position: relative;
     }
-  }
+
+    nav {
+        font-size: 15px;
+        font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+            sans-serif;
+        text-align: right;
+        margin-right: 50px;
+
+        a {
+            padding: 20px;
+            color: white;
+            text-decoration: none;
+
+            @media @mobile {
+                border-bottom: solid black 1px;
+            }
+        }
+
+        a:hover {
+            background: darken((#1d91b8), 10%);
+        }
+
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
 }
