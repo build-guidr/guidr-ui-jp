@@ -215,6 +215,10 @@ table {
     text-align: center;
   }
 }
+header img {
+  width: 100px;
+  height: 100px;
+}
 footer {
   display: block;
   text-align: center;
@@ -249,7 +253,7 @@ img {
   margin-bottom: 10px;
   color: whitesmoke;
 }
-.pic-container {
+.hero-container {
   background-image: url(../img/beauty-in-nature-cold-daylight-2089799.jpg);
   background-position: bottom center;
   background-size: cover;
