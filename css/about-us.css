@@ -7,11 +7,23 @@ header {
     height: 300px;
 }
 
-.header-pic-text {
-    position: absolute;
-    top: 50%;
-    left: 30%;
+.box-center {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 10px;
+    justify-content: center;
+    align-items: center;
     
+
+}
+
+.header-pic-text {
+    background-image: url(../img/australia-conifers-dirt-road-1008739.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
 .header-pic-text h1 {
