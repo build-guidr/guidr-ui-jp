@@ -1,0 +1,66 @@
+.container {
+    margin: 0 auto;
+    background-color: #fafafa;
+}
+
+header {
+    position: relative;
+}
+
+.header-pic img {
+    width: 100%;
+    height: 300px;
+}
+
+.box-center {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 10px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.header-pic-text {
+    background-image: url(../img/australia-conifers-dirt-road-1008739.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.header-pic-text h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.team-panel {
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 40%;
+        border-radius: 5px;
+        background-color: #ffff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  section {
+      display: flex;
+      flex-direction: row;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: #2F454E;
+}
+
+footer p {
+    color: white;
+}

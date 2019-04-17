@@ -1,0 +1,11 @@
+@import
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  background-color: #2F454E;
+}
+footer p {
+  color: white;
+}
