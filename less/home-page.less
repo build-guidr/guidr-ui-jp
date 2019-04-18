@@ -1,4 +1,5 @@
 .container {
+    width: 100%;
     margin: 0 auto;
     background-color: #fafafa;
 }
@@ -6,6 +7,11 @@
 .hero-picture {
     width: 100%;
     display: flex;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
 }
 
 img {
@@ -17,24 +23,34 @@ img {
     width: 100%;
     font-size: 30px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 20px;
-    color: #ffff;
+    
 
     h1 {
         font-size: 50px;
         margin-bottom: 10px;
         color: whitesmoke;
+
+       
+    }
+
+    p {
+     font-family: Arial, Helvetica, sans-serif;
+     color: whitesmoke;
+
+      @media @mobile {
+            color: rgb(17, 17, 17);
+        }
     }
 }
 
 .hero-container {
+    width: 100%;
     background-image: url(../img/beauty-in-nature-cold-daylight-2089799.jpg);
     background-position: bottom center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    width: 100%;
     .box-center();
     flex-direction: column;
     padding: 150px 10px;
@@ -45,7 +61,7 @@ img {
     margin: 0 auto;
     width: 100%;
     max-width: 1000px;
-    padding: 100px 15px;
+    
 
     .info-panels {
         display: flex;
@@ -95,7 +111,7 @@ img {
         width: 40%;
         border-radius: 5px;
         background-color: #ffff;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
 
         h2 {
             padding: 10px;
@@ -125,13 +141,14 @@ img {
 }
 
 .quote-spacer {
+    width: 100%;
     display: block;
     text-align: center;
     padding: 40px;
     background-color: #2F454E;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-    h2 {
+    p {
         font-size: 20px;
         color: white;
     }
