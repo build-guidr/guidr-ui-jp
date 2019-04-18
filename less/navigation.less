@@ -2,33 +2,78 @@
 @tablet: ~"(max-width: 800px)";
 
 .nav-container {
-    background-color: rgba(29, 145, 184, 0.8);
-    padding: 20px;
+    background-color: #1D92B8;
     display: flex;
-    flex-direction: column;
     position: fixed;
+    align-items: center;
+    justify-content: space-between;
     z-index: 2;
     top: 0;
     width: 100%;
+    height: 58px;
+
+    h1 {
+        padding: 20px;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
 
     @media @mobile {
         position: relative;
+        flex-direction: row;
     }
 
-    nav {
+    @media @tablet {
+        position: relative;
+        flex-direction: row;
+    }
+
+    .menu {
         font-size: 15px;
-        font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-            sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         text-align: right;
         margin-right: 50px;
 
+        @media @mobile {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            background-color: #1D92B8;
+            top: 57px;
+        }
+
+        @media @tablet {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            background-color: #1D92B8;
+            top: 57px;
+
+
+        }
+
+
         a {
             padding: 20px;
-            color: white;
+            color: #FFFFFF;
             text-decoration: none;
 
             @media @mobile {
                 border-bottom: solid black 1px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            @media @tablet {
+                border-bottom: solid black 1px;
+                display: flex;
+                flex-direction: column;
             }
         }
 
@@ -36,13 +81,34 @@
             background: darken((#1d91b8), 10%);
         }
 
-        @media @mobile {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
     }
 }
+
+.menu-button {
+    width: 80px;
+    height: 80px;
+    display: none;
+    cursor: pointer;
+
+
+    @media @mobile {
+        display: block;
+    }
+
+    @media @tablet {
+        display: block;
+    }
+}
+
+.menu.menu--open {
+    display: block;
+
+
+}
+
+
+
+
 
 header img {
     width: 100px;

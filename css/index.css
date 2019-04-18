@@ -43,9 +43,6 @@
   background-color: black;
   color: #ffff;
 }
-body {
-  color: #545454;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -174,46 +171,116 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  color: #545454;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .nav-container {
-  background-color: rgba(29, 145, 184, 0.8);
-  padding: 20px;
+  background-color: #1D92B8;
   display: flex;
-  flex-direction: column;
   position: fixed;
+  align-items: center;
+  justify-content: space-between;
   z-index: 2;
   top: 0;
   width: 100%;
+  height: 58px;
+}
+.nav-container h1 {
+  padding: 20px;
+  font-size: 20px;
+  color: #FFFFFF;
 }
 @media (max-width: 500px) {
   .nav-container {
     position: relative;
+    flex-direction: row;
   }
 }
-.nav-container nav {
+@media (max-width: 800px) {
+  .nav-container {
+    position: relative;
+    flex-direction: row;
+  }
+}
+.nav-container .menu {
   font-size: 15px;
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: right;
   margin-right: 50px;
 }
-.nav-container nav a {
+@media (max-width: 500px) {
+  .nav-container .menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    background-color: #1D92B8;
+    top: 57px;
+  }
+}
+@media (max-width: 800px) {
+  .nav-container .menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    background-color: #1D92B8;
+    top: 57px;
+  }
+}
+.nav-container .menu a {
   padding: 20px;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
 }
 @media (max-width: 500px) {
-  .nav-container nav a {
+  .nav-container .menu a {
     border-bottom: solid black 1px;
-  }
-}
-.nav-container nav a:hover {
-  background: #166e8c;
-}
-@media (max-width: 500px) {
-  .nav-container nav {
     display: flex;
     flex-direction: column;
-    text-align: center;
   }
+}
+@media (max-width: 800px) {
+  .nav-container .menu a {
+    border-bottom: solid black 1px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.nav-container .menu a:hover {
+  background: #166e8c;
+}
+.menu-button {
+  width: 80px;
+  height: 80px;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .menu-button {
+    display: block;
+  }
+}
+.menu.menu--open {
+  display: block;
 }
 header img {
   width: 100px;
@@ -229,12 +296,17 @@ footer p {
   color: white;
 }
 .container {
+  width: 100%;
   margin: 0 auto;
   background-color: #fafafa;
 }
 .hero-picture {
   width: 100%;
   display: flex;
+}
+.logo {
+  width: 100px;
+  height: 100px;
 }
 img {
   width: 100%;
@@ -244,22 +316,29 @@ img {
   width: 100%;
   font-size: 30px;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 20px;
-  color: #ffff;
+}
+.hero-info-blurb img {
+  width: 200px;
+  height: 200px;
 }
 .hero-info-blurb h1 {
   font-size: 50px;
   margin-bottom: 10px;
   color: whitesmoke;
 }
+.hero-info-blurb p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
 .hero-container {
+  box-sizing: border-box;
+  width: 100%;
   background-image: url(../img/beauty-in-nature-cold-daylight-2089799.jpg);
   background-position: bottom center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,7 +349,6 @@ img {
   margin: 0 auto;
   width: 100%;
   max-width: 1000px;
-  padding: 100px 15px;
 }
 .main-container .info-panels {
   display: flex;
@@ -315,7 +393,6 @@ img {
   width: 40%;
   border-radius: 5px;
   background-color: #ffff;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .main-container .card h2 {
   padding: 10px;
@@ -338,13 +415,91 @@ img {
   }
 }
 .quote-spacer {
-  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
   text-align: center;
   padding: 40px;
   background-color: #2F454E;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.quote-spacer h2 {
+.quote-spacer p {
   font-size: 20px;
+  color: white;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fafafa;
+}
+header {
+  position: relative;
+}
+.header-pic img {
+  width: 100%;
+  height: 300px;
+}
+.header-pic-text {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/australia-conifers-dirt-road-1008739.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-pic-text h1 {
+  font-size: 40px;
+  color: white;
+}
+.about-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about-container .team-panel {
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 290px;
+  border-radius: 5px;
+  background-color: #ffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about-container .team-panel h2 {
+  padding: 10px;
+}
+.about-container .team-panel .img-container {
+  width: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 250px;
+  margin: 0 auto;
+}
+.about-container .team-panel .img-container img {
+  width: 100%;
+  height: auto;
+}
+.about-container .team-panel i {
+  font-size: 60px;
+  color: #2F454E;
+}
+footer {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  background-color: #2F454E;
+}
+footer p {
   color: white;
 }
