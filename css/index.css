@@ -357,6 +357,9 @@ img {
   justify-content: space-around;
   align-content: center;
 }
+.main-container .info-panels p {
+  line-height: 2;
+}
 .main-container .info-panels img {
   width: 50%;
   height: 10%;

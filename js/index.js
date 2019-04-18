@@ -1,7 +1,6 @@
 
 //toggle menu feature
 
-
 const toggleMenu = function() {
   const menu = document.querySelector(".menu");
   menu.classList.toggle("menu--open");
