@@ -33,18 +33,23 @@
             display: none;
             flex-direction: column;
             text-align: center;
-            position: fixed;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            background-color: #1D92B8;
+            top: 57px;
+
+
         }
 
 
         a {
             padding: 20px;
-            color:#FFFFFF;
+            color: #FFFFFF;
             text-decoration: none;
 
             @media @mobile {
                 border-bottom: solid black 1px;
-                text-align: right;
                 display: flex;
                 flex-direction: column;
             }
@@ -65,16 +70,17 @@
 
 
     @media @mobile {
-    display: block;
+        display: block;
     }
-  }
-  
-  .menu.menu--open {
-    display: block;
-    
-  }
+}
 
- 
+.menu.menu--open {
+    display: block;
+
+
+}
+
+
 
 
 

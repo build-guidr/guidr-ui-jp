@@ -13,62 +13,78 @@ header {
     height: 300px;
 }
 
-.box-center {
-    display: flex;
-    flex-direction: column;
-    padding: 150px 10px;
-    justify-content: center;
-    align-items: center;
-    
 
-}
 
 .header-pic-text {
-    background-image: url(../img/australia-conifers-dirt-road-1008739.jpg);
-    background-position: bottom center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/australia-conifers-dirt-road-1008739.jpg);
+    background-position: bottom;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 40px;
+        color: white;
+    }
+}
+
+
+.about-container {
     width: 100%;
-}
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
-.header-pic-text h1 {
-    font-size: 40px;
-    color: white;
-}
-
-.team-panel {
+    .team-panel {
         padding: 10px;
         margin: 20px;
         text-align: center;
         box-sizing: border-box;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.3s;
-        width: 40%;
+        width: 290px;
         border-radius: 5px;
         background-color: #ffff;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-  }
+        h2 {
+            padding: 10px;
+        }
 
-  .team-panel img {
-      width: 100%;
-      height: auto;
-      border-radius: 50%;
-  }
+        .img-container {
+            width: 250px;
+            overflow: hidden;
+            border-radius: 50%;
+            height: 250px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                height: auto;
+
+            }
+        }
+
+        i {
+            font-size: 60px;
+            color: #2F454E;
+        }
 
 
-  .team-panel h2 {
-      padding: 10px;
-  }
+    }
 
-  section {
-      display: flex;
-      flex-direction: row;
-  }
+}
 
 
-  footer {
+footer {
     display: block;
     text-align: center;
     padding: 20px;
