@@ -23,6 +23,11 @@
         flex-direction: row;
     }
 
+    @media @tablet {
+        position: relative;
+        flex-direction: row;
+    }
+
     .menu {
         font-size: 15px;
         font-family: Arial, Helvetica, sans-serif;
@@ -30,6 +35,17 @@
         margin-right: 50px;
 
         @media @mobile {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            background-color: #1D92B8;
+            top: 57px;
+        }
+
+        @media @tablet {
             display: none;
             flex-direction: column;
             text-align: center;
@@ -53,6 +69,12 @@
                 display: flex;
                 flex-direction: column;
             }
+
+            @media @tablet {
+                border-bottom: solid black 1px;
+                display: flex;
+                flex-direction: column;
+            }
         }
 
         a:hover {
@@ -70,6 +92,10 @@
 
 
     @media @mobile {
+        display: block;
+    }
+
+    @media @tablet {
         display: block;
     }
 }
