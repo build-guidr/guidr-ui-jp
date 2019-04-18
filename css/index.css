@@ -432,6 +432,10 @@ img {
   margin: 0 auto;
   background-color: #fafafa;
 }
+.nav-logo {
+  width: 100px;
+  height: auto;
+}
 header {
   position: relative;
 }
