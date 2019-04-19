@@ -6,21 +6,17 @@
 }
 
 .btn-1 {
-
     .custom-btn();
+    
 }
 
-.btn-2 {
-    .custom-btn();
 
-}
-
-.custom-btn(@width: 200px, @bgColor: rgba(165, 184, 190, 0.555), @fontColor: black) {
+.custom-btn(@width: 200px, @bgColor:#1D92B8, @fontColor: #FFFFFF) {
     cursor: pointer;
     margin: 10px;
     height: 45px;
     font-size: 20px;
-    border: solid 1px black;
+    border: solid 1px #1D92B8;
     border-radius: 10px;
     background-color: @bgColor;
     width: @width;
@@ -29,6 +25,6 @@
 
     &:hover {
         background-color: @fontColor;
-        color: #ffff;
+        color: #1D92B8;
     }
 }
